@@ -1,0 +1,24 @@
+[
+  {
+    "orderid": "CA-1001",
+    "customer": {
+      "name": "ravi",
+      "segment": "consumer"
+    },
+    "details": {
+      "region": "south",
+      "profit": 5000
+    }
+  },
+  {
+    "orderid": "CA-1002",
+    "customer": {
+      "name": "priya",
+      "segment": "corporate"
+    },
+    "details": {
+      "region": "north",
+      "profit": 1800
+    }
+  }
+]

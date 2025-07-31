@@ -1,0 +1,6 @@
+orderid,orderdate,customer,segment,region,product,category,subcategory,quantity,unitprice,discount,profit
+CA-1001,2023-01-15,Ravi,Consumer,South,Laptop,Technology,Computers,1,55000,0.10,5000
+CA-1002,2023-02-20,Priya,Corporate,North,Printer,Technology,Peripherals,2,12000,0.15,1800
+CA-1003,2023-01-25,Amit,Consumer,East,Notebook,Office Supplies,Paper,3,200,0.05,150
+CA-1004,2023-03-01,Anita,Home Office,West,Table,Furniture,Tables,1,18000,0.20,-1500
+CA-1005,2023-02-05,Divya,Consumer,South,Phone,Technology,Phones,2,20000,0.00,3000
