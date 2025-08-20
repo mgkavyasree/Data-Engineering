@@ -1,0 +1,41 @@
+Prepare a brief technical note (400–500 words max) addressing the following:
+    1. What is Apache Airflow, and how does it work?
+    2. Where does Airflow fit in modern data engineering workflows?
+    3. How is Airflow different from traditional schedulers or other tools like Prefect or Luigi?
+    4. What are the key components (e.g., DAGs, operators, scheduler, executor) and how do they interact?
+    5. Based on your learning, where do you see Airflow being useful in real-time enterprise or product scenarios?
+
+
+
+NOTE: ASSESSMENT 1 PY FILE IS STORED AS etl_pipeline_dag.py
+
+
+
+ANSWERS:
+Apache Airflow: Practical Workflow & Conceptual Understanding:
+
+1. What is Apache Airflow, and how does it work?
+    Apache Airflow is an open-source workflow orchestration tool designed to author, schedule, and monitor data pipelines. At its core, workflows in Airflow are defined as Directed Acyclic Graphs (DAGs). Each DAG is a collection of tasks with defined dependencies, ensuring they run in the correct sequence. The Airflow scheduler triggers tasks, the executor runs them, and results are logged for monitoring.
+
+2. Where does Airflow fit in modern data engineering workflows?
+    Airflow is widely used in modern data engineering for orchestrating ETL (Extract, Transform, Load) pipelines, managing batch workflows, and automating repetitive jobs. In data-driven companies, raw data is ingested from APIs, databases, or files, then transformed into structured formats for analytics or machine learning. Airflow sits at the orchestration layer, ensuring these stages run reliably and in the correct order, often on a schedule (daily, hourly) or triggered by events.
+
+3. How is Airflow different from traditional schedulers or other tools like Prefect or Luigi?
+    Traditional schedulers like cron simply trigger jobs at fixed times but cannot manage dependencies or track execution states. Airflow, on the other hand, models workflows as DAGs, making them easier to monitor, retry, and scale. Compared to Luigi, Airflow offers a richer UI, better scheduling, and stronger community support. Prefect is a more modern alternative with a Python-first approach and better handling of dynamic workflows, but Airflow remains the industry standard for complex pipelines and enterprise adoption.
+
+4. What are the key components and how do they interact?
+    DAGs: Define workflows as sets of tasks with dependencies.
+    Operators: Building blocks of tasks (PythonOperator, BashOperator, etc.).
+    Scheduler: Determines when tasks should run and pushes them into the executor queue.
+    Executor: Runs the tasks, either locally, on Celery workers, or Kubernetes pods.
+    Webserver: Provides a UI to view DAGs, monitor task runs, and debug errors.
+    These components work together to provide a reliable workflow orchestration environment.
+
+5. Where is Airflow useful in real-world scenarios?
+    Airflow is widely used in industries where data workflows need automation and monitoring.
+    Examples include:
+    Finance: Automating daily data aggregation and risk reports.
+    E-commerce: Orchestrating product, inventory, and recommendation pipelines.
+    Healthcare: Managing data ingestion from medical devices and patient systems.
+    Machine Learning: Coordinating feature engineering, model training, and batch inference jobs.
+    Overall, Airflow simplifies managing complex pipelines, improves reliability, and provides full observability into data workflows — making it a vital tool in modern enterprise data platforms.

@@ -1,0 +1,39 @@
+Write a short internal technical note (max 500 words) that answers:
+    1. What is the role of DAGs in monitoring and auditing pipelines?
+    2. How can Airflow be adapted for event-driven workflows (e.g., reacting to external changes)?
+    3. Compare Airflow with cron-based scripting, with at least 2 advantages.
+    4. How can Airflow be integrated with external logging/alerting systems?
+
+
+Technical Note: Event-Driven Data Audit with Apache Airflow
+
+
+
+
+NOTE: ASSESSMENT 2 PY FILE IS STORED AS data_audit_dag.py
+
+
+
+1. What is the role of DAGs in monitoring and auditing pipelines?
+    Role of DAGs in Monitoring and Auditing Pipelines
+    Directed Acyclic Graphs (DAGs) in Airflow provide a structured way to define, schedule, and monitor workflows. For auditing pipelines, DAGs allow organizations to define sequential audit steps such as data extraction, validation, logging, and alerting. By chaining tasks with dependencies, DAGs ensure that audits follow a repeatable and transparent process. Failures in validation can be caught early, and logs provide an audit trail for compliance.
+
+2. How can Airflow be adapted for event-driven workflows (e.g., reacting to external changes)?
+    Event-Driven Workflows in Airflow
+    Although Airflow is primarily a scheduler, it can be adapted for event-driven workflows. For instance, Airflow can be triggered by external events such as arrival of a file in cloud storage (via sensors), new rows in a database, or an API call. Event-driven DAGs allow Airflow to react dynamically to changes rather than running only on fixed schedules, making it more suitable for real-time monitoring and auditing scenarios.
+
+3. Compare Airflow with cron-based scripting, with at least 2 advantages.
+    Airflow vs. Cron-Based Scripting
+    Traditional cron jobs provide basic scheduling but lack observability, error handling, and dependency management. Airflow has clear advantages:
+
+    Dependency Management: Unlike cron, Airflow ensures tasks run in the correct sequence and only when prerequisites are met.
+    Monitoring & Retry: Airflow provides rich UI, automatic retries, and failure alerts. Cron jobs simply run and fail silently.
+
+    These features make Airflow better suited for critical enterprise pipelines.
+
+4. How can Airflow be integrated with external logging/alerting systems?
+    Integration with Logging and Alerting Systems
+    Airflow integrates seamlessly with external monitoring systems like Prometheus, Grafana, and ELK Stack. It also supports sending alerts via email, Slack, or custom webhooks when tasks fail. Audit logs can be exported to external systems for compliance, providing traceability and accountability across the workflow.
+
+    Enterprise Use Cases
+    Airflow’s DAGs can be useful in financial audits, fraud detection, and compliance monitoring where rules must be validated continuously. For example, ensuring transactions above a threshold are flagged, or verifying data freshness in reporting systems. Airflow’s combination of scheduling, monitoring, and extensibility makes it a strong fit for enterprise-grade auditing pipelines.
