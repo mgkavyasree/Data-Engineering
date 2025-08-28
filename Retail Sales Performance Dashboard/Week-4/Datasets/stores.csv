@@ -1,0 +1,21 @@
+﻿storeID,name,region,address,createdAt
+1,Urban Mart - NY,East Coast,"101 Main St, New York, NY",2022-01-01
+2,SuperSave - LA,West Coast,"202 Ocean Ave, Los Angeles, CA",2022-01-01
+3,FreshStore - TX,South,"303 Sunset Blvd, Austin, TX",2022-01-01
+4,MegaMart - IL,Midwest,"404 Windy Rd, Chicago, IL",2022-01-01
+5,BudgetBazaar - FL,Southeast,"505 Palm Dr, Miami, FL",2022-01-01
+6,GreenMarket - WA,West Coast,"606 Pine St, Seattle, WA",2022-01-02
+7,ValueDepot - CO,Mountain,"707 Aspen Rd, Denver, CO",2022-01-02
+8,QuickBuy - MA,Northeast,"808 Beacon St, Boston, MA",2022-01-02
+9,DailyMart - GA,Southeast,"909 Peachtree St, Atlanta, GA",2022-01-02
+10,EconoMart - AZ,Southwest,"1010 Desert Dr, Phoenix, AZ",2022-01-02
+11,HappyStore - NJ,East Coast,"1111 Garden St, Newark, NJ",2022-01-03
+12,Saver’s Corner - OH,Midwest,"1212 Lake St, Columbus, OH",2022-01-03
+13,NeighborhoodMart - NV,West,"1313 Strip Ave, Las Vegas, NV",2022-01-03
+14,FamilyMart - NC,South,"1414 Oak Dr, Raleigh, NC",2022-01-03
+15,SmartBuy - MI,Midwest,"1515 Woodward Ave, Detroit, MI",2022-01-03
+16,QuickMart - OR,West,"1616 River Rd, Portland, OR",2022-01-04
+17,EconomyMart - NM,Southwest,"1717 Sand St, Albuquerque, NM",2022-01-04
+18,LocalGoods - PA,Northeast,"1818 Liberty St, Pittsburgh, PA",2022-01-04
+19,FastMart - MO,Midwest,"1919 Arch St, St. Louis, MO",2022-01-04
+20,CityStore - TN,South,"2020 Music Ave, Nashville, TN",2022-01-04

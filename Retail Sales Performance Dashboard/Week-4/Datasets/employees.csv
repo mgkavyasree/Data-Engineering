@@ -1,0 +1,21 @@
+﻿employeeID,name,storeID,role,hireDate
+1,John Smith,1,Cashier,2022-01-12
+2,Alice Johnson,2,Manager,2021-03-15
+3,Bob Lee,3,Sales Associate,2023-06-18
+4,Eva Martinez,4,Supervisor,2020-11-30
+5,David Chen,5,Stock Clerk,2019-09-10
+6,Liam Brown,1,Cashier,2022-02-05
+7,Olivia White,2,Manager,2021-05-22
+8,Noah Wilson,3,Sales Associate,2023-01-11
+9,Emma Davis,4,Supervisor,2020-10-09
+10,James Anderson,5,Stock Clerk,2018-07-21
+11,Ava Thomas,1,Cashier,2022-03-08
+12,Lucas Moore,2,Manager,2021-09-27
+13,Sophia Taylor,3,Sales Associate,2023-04-14
+14,Benjamin Martin,4,Supervisor,2020-06-02
+15,Isabella Garcia,5,Stock Clerk,2019-12-19
+16,Elijah Martinez,1,Cashier,2022-08-10
+17,Mia Robinson,2,Manager,2021-01-30
+18,William Clark,3,Sales Associate,2023-07-05
+19,Charlotte Rodriguez,4,Supervisor,2020-02-17
+20,Henry Lewis,5,Stock Clerk,2019-05-29
