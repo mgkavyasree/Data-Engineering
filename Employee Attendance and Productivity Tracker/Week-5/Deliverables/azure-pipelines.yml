@@ -1,0 +1,20 @@
+trigger: master
+
+schedules:
+- cron: "0 0 * * 1"
+  displayName: Monday Run
+  branches:
+    include:
+    - main
+  always: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+
+- script: python ETL_databricks_notebook.ipynb
+  displayName: 'Running script'

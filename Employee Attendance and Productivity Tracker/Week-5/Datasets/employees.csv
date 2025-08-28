@@ -1,0 +1,6 @@
+﻿employeeID,name,department,role,email,hireDate,status
+1,John Doe,Engineering,Software Developer,john.doe@example.com,2023-01-15,Active
+2,Jane Smith,Marketing,Content Strategist,jane.smith@example.com,2022-11-20,Active
+3,Alice Johnson,HR,HR Manager,alice.johnson@example.com,2021-09-10,Active
+4,Bob Brown,Engineering,DevOps Engineer,bob.brown@example.com,2023-05-01,Active
+5,Eva Green,Finance,Accountant,eva.green@example.com,2022-06-30,Resigned
