@@ -1,0 +1,21 @@
+﻿productID,name,category,price,sellprice,cost,dateAdded,Margin,Margin %
+1,Laptop Pro 14,Electronics,1200,999,900,2024-05-01,99,9.91
+2,Organic Apples,Grocery,3.5,3,2,2024-05-01,1,33.33
+3,Cotton T-Shirt,Apparel,25,21,10,2024-05-01,11,52.38
+4,Bluetooth Speaker,Electronics,60,55,40,2024-05-01,15,27.27
+5,LED Bulb Pack,Home Goods,15,12,8,2024-05-01,4,33.33
+6,Running Shoes,Footwear,70,60,45,2024-05-02,15,25.00
+7,Desk Chair,Furniture,150,135,100,2024-05-02,35,25.93
+8,Smartphone XR,Electronics,800,720,600,2024-05-02,120,16.67
+9,Whole Wheat Bread,Grocery,2.5,2,1.5,2024-05-02,0.5,25.00
+10,Sports Watch,Accessories,90,80,60,2024-05-02,20,25.00
+11,Backpack,Accessories,50,45,30,2024-05-03,15,33.33
+12,Microwave Oven,Home Goods,200,180,150,2024-05-03,30,16.67
+13,Denim Jeans,Apparel,40,35,20,2024-05-03,15,42.86
+14,Smart TV 42",Electronics,500,450,400,2024-05-03,50,11.11
+15,Electric Kettle,Home Goods,30,28,20,2024-05-03,8,28.57
+16,Wireless Mouse,Electronics,25,20,15,2024-05-04,5,25.00
+17,Shampoo Bottle,Grocery,5,4.5,3,2024-05-04,1.5,33.33
+18,Leather Wallet,Accessories,35,30,18,2024-05-04,12,40.00
+19,Office Desk,Furniture,300,270,200,2024-05-04,70,25.93
+20,Headphones,Electronics,80,70,55,2024-05-04,15,21.43
