@@ -1,0 +1,33 @@
+trigger:
+- main   # Run pipeline when changes are pushed to 'main' branch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# Step 1: Checkout repository
+- task: Checkout@1
+
+# Step 2: Set up Python
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.10'
+    addToPath: true
+
+# Step 3: Install dependencies
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+  displayName: 'Install dependencies'
+
+# Step 4: Run data processing script
+- script: |
+    python data_processing.py
+  displayName: 'Run data processing'
+
+# Step 5: Publish raw & cleaned files as artifacts
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'data/'
+    ArtifactName: 'SalesData'
+    publishLocation: 'Container'

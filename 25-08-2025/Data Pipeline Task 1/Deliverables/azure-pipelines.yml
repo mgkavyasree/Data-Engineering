@@ -1,0 +1,40 @@
+trigger:
+- main   # Runs pipeline when code is pushed to 'main' branch
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# Step 1: Checkout code from repo
+- task: Checkout@1
+
+# Step 2: Set up Python
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.10'
+    addToPath: true
+
+# Step 3: Install dependencies
+- script: |
+    python -m pip install --upgrade pip
+    pip install -r data_pipeline/requirements.txt
+  displayName: 'Install dependencies'
+
+# Step 4: Fetch raw data
+- script: |
+    cd data_pipeline
+    python fetch_data.py
+  displayName: 'Fetch raw data'
+
+# Step 5: Process data
+- script: |
+    cd data_pipeline
+    python process_data.py
+  displayName: 'Process data'
+
+# Step 6: Publish output artifact
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: 'data_pipeline/processed_data.json'
+    ArtifactName: 'ProcessedData'
+    publishLocation: 'Container'

@@ -1,0 +1,11 @@
+order_id,customer_name,region,revenue,cost,profit,profit_margin,customer_segment
+101,John Doe,North,120000.0,80000.0,40000.0,0.3333333333333333,Platinum
+102,Jane Smith,South,75000.0,50000.0,25000.0,0.3333333333333333,Gold
+103,Bob Johnson,Unknown,50000.0,30000.0,20000.0,0.4,Standard
+104,Alice Williams,East,0.0,20000.0,-20000.0,0.0,Standard
+105,Chris Evans,West,200000.0,150000.0,50000.0,0.25,Platinum
+106,Sara Lee,Unknown,0.0,0.0,0.0,0.0,Standard
+107,David Kim,North,60000.0,0.0,60000.0,1.0,Gold
+108,Emma Brown,South,90000.0,60000.0,30000.0,0.3333333333333333,Gold
+109,Michael Scott,East,45000.0,30000.0,15000.0,0.3333333333333333,Standard
+110,Rachel Green,Unknown,70000.0,40000.0,30000.0,0.42857142857142855,Gold

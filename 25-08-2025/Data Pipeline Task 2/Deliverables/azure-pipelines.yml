@@ -1,0 +1,35 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+# Step 1: Install Python
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+
+# Step 2: Install dependencies
+- script: |
+    pip install -r requirements.txt
+  displayName: 'Install Python dependencies'
+
+# Step 3: Run the Python script
+- script: |
+    python sales_data_pipeline.py
+  displayName: 'Run sales_data_pipeline.py'
+
+# Step 4: Publish artifacts
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'data/raw_sales_data.csv'
+    artifactName: 'raw_sales_data'
+    publishLocation: 'pipeline'
+
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: 'data/processed_sales_data.csv'
+    artifactName: 'processed_sales_data'
+    publishLocation: 'pipeline'

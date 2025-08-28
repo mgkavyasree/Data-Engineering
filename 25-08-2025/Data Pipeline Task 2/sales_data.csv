@@ -1,0 +1,11 @@
+order_id,customer_name,region,revenue,cost
+101,John Doe,North,120000,80000
+102,Jane Smith,South,75000,50000
+103,Bob Johnson,,50000,30000
+104,Alice Williams,East,,20000
+105,Chris Evans,West,200000,150000
+106,Sara Lee,,0,0
+107,David Kim,North,60000,
+108,Emma Brown,South,90000,60000
+109,Michael Scott,East,45000,30000
+110,Rachel Green,,70000,40000
