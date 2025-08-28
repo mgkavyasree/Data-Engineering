@@ -1,0 +1,27 @@
+trigger: master
+
+schedules:
+- cron: "0 0 * * 1"
+  displayName: Monday Run
+  branches:
+    include:
+    - main
+  always: true
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+
+- script: python ETL_databricks_notebook.ipynb
+  displayName: 'Running script'
+
+- script: python ETL_databricks_notebook.ipynb
+  displayName: '5 lowest performing stores to email'
+  env:
+    EMAIL_FROM: $(EMAIL_FROM)
+    EMAIL_TO: $(EMAIL_TO)
+    EMAIL_PASSWORD: $(EMAIL_PASSWORD)
