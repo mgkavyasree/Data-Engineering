@@ -1,0 +1,6 @@
+﻿taskID,employeeID,taskName,taskDate,tasksCompeleted
+1,1,API Integration,2024-06-01,5
+2,2,Content Calendar Creation,2024-06-01,3
+3,3,Policy Review,2024-06-01,0
+4,4,CI/CD Setup,2024-06-01,4
+5,5,Invoice Auditing,2024-06-01,6
